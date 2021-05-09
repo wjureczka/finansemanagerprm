@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">FinanseManager</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_expense">Your expense</string>
+    <string name="add_expense_title">Your expense</string>
+    <string name="add_expense_place">Place</string>
+    <string name="add_expense_category">Category</string>
+    <string name="add_expense_balance">Balance</string>
+    <string name="add_expense_date">Date</string>
+    <string name="expense_share">Share</string>
+    <string name="expense_add">Add</string>
+    <string name="expense_choose_date">Choose date</string>
+    <string name="apply_changes">Apply</string>
+</resources>
