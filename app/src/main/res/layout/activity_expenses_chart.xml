@@ -7,9 +7,19 @@
     android:layout_height="match_parent"
     tools:context=".ExpensesChartActivity">
 
+    <Button
+        android:id="@+id/chart_select_month_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/select_date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <HorizontalScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
         android:fadeScrollbars="false"
         android:scrollbarAlwaysDrawHorizontalTrack="true"
         android:scrollbarStyle="insideInset"
@@ -18,7 +28,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/chart_select_month_button">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -33,5 +43,16 @@
                 app:showText="false" />
         </LinearLayout>
     </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/chart_selected_month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintBottom_toBottomOf="@+id/chart_select_month_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/chart_select_month_button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
